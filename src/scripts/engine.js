@@ -40,7 +40,6 @@ function countDownToPlay () {
 
         clearInterval(state.actions.startCounterId)
         state.view.message.textContent = 'GO!'
-        setTimeout(() => state.view.message.textContent = '', 1000)
 
         cards.forEach(card => {
             card.addEventListener('click', handleClick)
