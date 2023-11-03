@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Jogo da Memória</h2>
+        
+        <div class="menu">
+            <div class="menu-score">
+                <h2>Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-attempts">
+                <h2>Attempts</h2>
+                <h2 id="attempts">x3</h2>
+            </div>
+        </div>
+
+        <div class="panel-container">
+            <div class="adjust-container">
+                <div class="cards-container">
+                </div>
+
+            </div>
+            <div class="panel-control">
+                <p id="message">Press Start</p>
+                <div class="buttons">
+                    <button class="start">Start</button>
+                    <button class="reset hide" disabled>Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./src/scripts/engine.js"></script>
+</body>
+</html>
